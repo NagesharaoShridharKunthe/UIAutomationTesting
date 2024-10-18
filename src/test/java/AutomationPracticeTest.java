@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -120,5 +121,13 @@ public class AutomationPracticeTest {
         String displayedTotalText = driver.findElement(By.xpath("//div[contains(text(),'Total Amount Collected:')]")).getText();
         int displayedTotal = Integer.parseInt(displayedTotalText.split(":")[1].trim());
         assertEquals(total, displayedTotal, "Total amount does not match");
+    }
+    @Test
+    public void testMouseHover() throws InterruptedException {
+        WebElement hoverButton = driver.findElement(By.id("mousehover"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(hoverButton).perform();
+        Thread.sleep(2000);
+        driver.findElement(By.linkText("Reload")).click();
     }
 }
