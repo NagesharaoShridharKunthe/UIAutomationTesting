@@ -19,9 +19,13 @@ public class AutomationPracticeTest {
 
     @BeforeEach
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+    }
+    @AfterEach
+    public void tearDown() {
+        driver.quit();
     }
 
     @Test
