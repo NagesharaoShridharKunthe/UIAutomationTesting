@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -80,6 +81,22 @@ public class AutomationPracticeTest {
         assertTrue(driver.findElement(By.xpath("//li[@class='nav-item']/a[text()='Contact']")).isDisplayed());
         assertTrue(driver.findElement(By.xpath("//li[@class='nav-item']/a[text()='Blog']")).isDisplayed());
         assertTrue(driver.findElement(By.xpath("//li[@class='nav-item']/a[text()='About us']")).isDisplayed());
+        Thread.sleep(2000);
+    }
+    @Test
+    public void testAlerts() throws InterruptedException {
+        driver.findElement(By.id("name")).sendKeys("Nagesharao");
+        Thread.sleep(2000);
+        driver.findElement(By.id("alertbtn")).click();
+        Thread.sleep(2000);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+        driver.findElement(By.id("name")).sendKeys("Nagesharao");
+        Thread.sleep(2000);
+        driver.findElement(By.id("confirmbtn")).click();
+        Thread.sleep(2000);
+        Alert confirmAlert = driver.switchTo().alert();
+        confirmAlert.dismiss();
         Thread.sleep(2000);
     }
 }
