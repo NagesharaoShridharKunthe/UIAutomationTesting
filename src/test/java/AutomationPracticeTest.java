@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -42,6 +43,15 @@ public class AutomationPracticeTest {
         }
         String selectedValue = driver.findElement(By.id("autocomplete")).getAttribute("value");
         assertEquals(selectedValue, "India", "India is not selected");
+        Thread.sleep(2000);
+    }
+    @Test
+    public void testDropdown() throws InterruptedException {
+        WebElement dropdown = driver.findElement(By.id("dropdown-class-example"));
+        Select select = new Select(dropdown);
+        select.selectByValue("option2");
+        String selectedText = select.getFirstSelectedOption().getText();
+        assertEquals(selectedText, "Option2", "Option2 is not selected in dropdown");
         Thread.sleep(2000);
     }
 }
