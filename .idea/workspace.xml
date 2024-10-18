@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05e76852-bb74-4e82-8d9d-15dd015bd32b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/drivers/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AutomationPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomationPracticeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2nb3tZJ6NKl1bdCfr4R9TDYhuS0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AutomationPracticeTest.executor": "Run",
+    "JUnit.AutomationPracticeTest.switchTab.executor": "Run",
+    "JUnit.AutomationPracticeTest.testAlerts.executor": "Run",
+    "JUnit.AutomationPracticeTest.testCheckbox.executor": "Run",
+    "JUnit.AutomationPracticeTest.testDropdown.executor": "Run",
+    "JUnit.AutomationPracticeTest.testMouseHover.executor": "Run",
+    "JUnit.AutomationPracticeTest.testRadioButton.executor": "Run",
+    "JUnit.AutomationPracticeTest.testSuggestionClass.executor": "Run",
+    "JUnit.AutomationPracticeTest.testTotalAmount.executor": "Run",
+    "JUnit.AutomationPracticeTest.testWebTable.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/raramuri/IdeaProjects/UITestAutomation/drivers",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.AutomationPracticeTest.testRadioButton">
+    <configuration name="AutomationPracticeTest.testAlerts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UITestAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomationPracticeTest" />
+      <option name="METHOD_NAME" value="testAlerts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationPracticeTest.testMouseHover" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UITestAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomationPracticeTest" />
+      <option name="METHOD_NAME" value="testMouseHover" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationPracticeTest.testRadioButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UITestAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomationPracticeTest" />
+      <option name="METHOD_NAME" value="testRadioButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationPracticeTest.testTotalAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UITestAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomationPracticeTest" />
+      <option name="METHOD_NAME" value="testTotalAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationPracticeTest.testWebTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UITestAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomationPracticeTest" />
+      <option name="METHOD_NAME" value="testWebTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AutomationPracticeTest.testRadioButton" />
+        <item itemvalue="JUnit.AutomationPracticeTest.testTotalAmount" />
+        <item itemvalue="JUnit.AutomationPracticeTest.testWebTable" />
+        <item itemvalue="JUnit.AutomationPracticeTest.testMouseHover" />
+        <item itemvalue="JUnit.AutomationPracticeTest.testAlerts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05e76852-bb74-4e82-8d9d-15dd015bd32b" name="Changes" comment="" />
+      <created>1729228164085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729228164085</updated>
+    </task>
+    <servers />
+  </component>
+</project>

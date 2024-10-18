@@ -27,8 +27,8 @@ To set up and run the automated tests, follow these steps:
 - **Navigate to the Repository**: ``` cd <path>```
 - **Install Dependencies**: ```mvn clean install```
 - **Configure WebDriver Update the path to your chromedriver in the test classes**:
-```java
-System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+```
+ System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
 ```
 ## Running Tests:
 
@@ -44,6 +44,8 @@ UIAutomationTesting/
 │   ├── encodings.xml
 │   ├── misc.xml
 │   └── vcs.xml
+├── drivers
+│   └── chromedriver
 ├── src/
 │   └── test/
 │       └── java/
