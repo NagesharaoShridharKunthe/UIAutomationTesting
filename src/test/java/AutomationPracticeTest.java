@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AutomationPracticeTest {
@@ -59,6 +60,26 @@ public class AutomationPracticeTest {
         WebElement checkbox = driver.findElement(By.id("checkBoxOption1"));
         checkbox.click();
         assertTrue(checkbox.isSelected(), "Checkbox Option1 is not selected");
+        Thread.sleep(2000);
+    }
+    @Test
+    public void switchTab() throws InterruptedException {
+        driver.findElement(By.id("opentab")).click();
+
+        List<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+
+        String expectedTitle = "QAClick Academy - A Testing Academy to Learn, Earn and Shine";
+        assertTrue(driver.getTitle().contains(expectedTitle));
+
+        assertTrue(driver.findElement(By.linkText("Home")).isDisplayed());
+        assertTrue(driver.findElement(By.linkText("Courses")).isDisplayed());
+        assertTrue(driver.findElement(By.linkText("Access all our Courses")).isDisplayed());
+        assertTrue(driver.findElement(By.linkText("Learn More")).isDisplayed());
+        assertTrue(driver.findElement(By.xpath("//div[@class='apply-cont apply-color-2']/a")).isDisplayed());
+        assertTrue(driver.findElement(By.xpath("//li[@class='nav-item']/a[text()='Contact']")).isDisplayed());
+        assertTrue(driver.findElement(By.xpath("//li[@class='nav-item']/a[text()='Blog']")).isDisplayed());
+        assertTrue(driver.findElement(By.xpath("//li[@class='nav-item']/a[text()='About us']")).isDisplayed());
         Thread.sleep(2000);
     }
 }
