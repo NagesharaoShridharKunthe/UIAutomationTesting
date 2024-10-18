@@ -110,4 +110,15 @@ public class AutomationPracticeTest {
         }
         Thread.sleep(2000);
     }
+    @Test
+    public void testTotalAmount() {
+        // Locate the amounts in the fixed header table (4th column)
+        List<WebElement> amounts = driver.findElements(By.xpath("//div[@class='tableFixHead']//tbody//td[4]"));
+
+        // Calculate the total sum of all the amounts
+        int total = amounts.stream().mapToInt(e -> Integer.parseInt(e.getText().trim())).sum();
+        String displayedTotalText = driver.findElement(By.xpath("//div[contains(text(),'Total Amount Collected:')]")).getText();
+        int displayedTotal = Integer.parseInt(displayedTotalText.split(":")[1].trim());
+        assertEquals(total, displayedTotal, "Total amount does not match");
+    }
 }
