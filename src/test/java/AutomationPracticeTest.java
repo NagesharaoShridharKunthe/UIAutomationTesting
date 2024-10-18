@@ -54,4 +54,11 @@ public class AutomationPracticeTest {
         assertEquals(selectedText, "Option2", "Option2 is not selected in dropdown");
         Thread.sleep(2000);
     }
+    @Test
+    public void testCheckbox() throws InterruptedException {
+        WebElement checkbox = driver.findElement(By.id("checkBoxOption1"));
+        checkbox.click();
+        assertTrue(checkbox.isSelected(), "Checkbox Option1 is not selected");
+        Thread.sleep(2000);
+    }
 }
