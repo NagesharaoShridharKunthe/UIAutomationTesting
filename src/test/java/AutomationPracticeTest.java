@@ -99,4 +99,15 @@ public class AutomationPracticeTest {
         confirmAlert.dismiss();
         Thread.sleep(2000);
     }
+    @Test
+    public void testWebTable() throws InterruptedException {
+        List<WebElement> courses = driver.findElements(By.cssSelector("table#product tbody tr"));
+        for (WebElement course : courses) {
+            if (course.getText().contains("Master Selenium Automation in simple Python Language")) {
+                String price = course.findElement(By.xpath("./td[3]")).getText();
+                assertEquals("35", price, "Course price is not 35");
+            }
+        }
+        Thread.sleep(2000);
+    }
 }
